@@ -1,5 +1,0 @@
-cd d:\vishnu\final_project\backend
-$env:GEMINI_API_KEY="AIzaSyDF-B_XjIENsZfY6bbWVZaA2Mp3gedUsp0"
-node server.js
-cd d:\vishnu\final_project\frontend
-npm run dev
