@@ -214,3 +214,29 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
+
+/* Responsive Layouts */
+.responsive-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-split {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.responsive-split-2-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-split-2-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+}

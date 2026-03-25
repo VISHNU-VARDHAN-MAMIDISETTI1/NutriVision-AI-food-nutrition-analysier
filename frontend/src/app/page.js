@@ -84,7 +84,7 @@ export default function Home() {
   };
 
   return (
-    <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "2rem", marginTop: "1rem" }}>
+    <div className="responsive-split">
       {/* Left Column: Input Methods & History Shortcut */}
       <div className="flex-col gap-8" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
@@ -126,7 +126,7 @@ export default function Home() {
             <h3 style={{ fontSize: "1.4rem", fontWeight: "700", marginBottom: "0.5rem" }}>{foodData.name}</h3>
             <p style={{ color: "var(--text-muted)", fontSize: "1.2rem", marginBottom: "1.5rem" }}>{foodData.calories} Cal</p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '1rem' }}>
               {foodData.macrosList.map((m, i) => (
                 <div key={m.name} className="metric-box">
                   <div style={{ fontSize: "1.2rem", fontWeight: "700", color: COLORS[i] }}>{m.value}g</div>

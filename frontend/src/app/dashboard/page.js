@@ -94,7 +94,7 @@ export default function Dashboard() {
                         </div>
                     </div>
 
-                    <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: "2rem" }}>
+                    <div className="responsive-split-2-1">
                         {/* Calorie Trend Chart */}
                         <div className="glass-panel" style={{ padding: "1.5rem" }}>
                             <h3 style={{ fontSize: "1.2rem", fontWeight: "600", marginBottom: "1.5rem", color: "var(--text-light)" }}>Caloric Trend</h3>

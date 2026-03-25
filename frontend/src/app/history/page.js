@@ -40,7 +40,7 @@ export default function History() {
             ) : (
                 <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
                     {logs.map((log, index) => (
-                        <div key={index} className="light-card" style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "2rem", padding: "1.5rem" }}>
+                        <div key={index} className="light-card" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem", padding: "1.5rem" }}>
                             <div style={{ borderRight: "1px solid rgba(0,0,0,0.05)", paddingRight: "2rem" }}>
                                 <h3 style={{ fontSize: "1.4rem", fontWeight: "700", marginBottom: "0.3rem" }}>{log.name}</h3>
                                 <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", marginBottom: "1rem" }}>
@@ -73,7 +73,7 @@ export default function History() {
                                             </PieChart>
                                         </ResponsiveContainer>
                                     </div>
-                                    <div style={{ flex: 2, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.8rem", alignContent: "center" }}>
+                                    <div style={{ flex: 2, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", gap: "0.8rem", alignContent: "center" }}>
                                         {log.macrosList.map((m, i) => (
                                             <div key={m.name} style={{ display: "flex", justifyContent: "space-between", fontSize: "0.9rem" }}>
                                                 <span style={{ display: "flex", alignItems: "center", gap: "0.4rem" }}>
